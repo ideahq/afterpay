@@ -2,16 +2,11 @@
 namespace IdeaHq\Afterpay\Action\Api;
 
 use IdeaHq\Afterpay\Request\Api\CapturePayment;
-use Payum\Core\ApiAwareTrait;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
-use Payum\Core\GatewayAwareTrait;
 
 class CapturePaymentAction extends BaseApiAwareAction
 {
-    use ApiAwareTrait;
-    use GatewayAwareTrait;
-
     /**
      * {@inheritDoc}
      */

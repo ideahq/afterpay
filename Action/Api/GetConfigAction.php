@@ -2,17 +2,11 @@
 namespace IdeaHq\Afterpay\Action\Api;
 
 use IdeaHq\Afterpay\Request\Api\GetConfig;
-use Payum\Core\ApiAwareTrait;
 use Payum\Core\Bridge\Spl\ArrayObject;
-use Payum\Core\Exception\LogicException;
 use Payum\Core\Exception\RequestNotSupportedException;
-use Payum\Core\GatewayAwareTrait;
 
 class GetConfigAction extends BaseApiAwareAction
 {
-    use ApiAwareTrait;
-    use GatewayAwareTrait;
-
     /**
      * {@inheritDoc}
      */
